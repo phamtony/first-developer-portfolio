@@ -1,0 +1,79 @@
+/*Styles for the portfolio*/
+
+#port {
+	width:100%;
+	margin-bottom: 10px;
+	text-align: left;
+}
+
+article a img {
+	height: 450px;
+	width: 600px;
+	margin-bottom: 40px;
+}
+
+article p {
+	text-align: center;
+}
+
+article p {
+	width: 604px;
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table {
+	border: 1px solid black;
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+}
+thead {
+	background-color: grey;
+	font-weight: bold;
+}
+th, td {
+	border: 1px solid black;
+	padding: 5px;
+	text-align: right;
+}
+
+
+/*imagemap styles*/
+
+#imageMap h3 {
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+#imageMap img {
+	display:block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/*audio settings*/
+
+#audio {
+	margin: 30px 0px;
+	display:block;
+}
+
+#audio audio {
+	margin-top: 15px;
+}
+
+/*Lists styles*/
+.list {
+	display:block;
+	float: left;
+	width: 50%;
+}
+
+.artistlist {
+	display: block;
+	float: left;
+	width: 50%;
+}

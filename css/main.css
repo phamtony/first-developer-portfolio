@@ -1,0 +1,275 @@
+												/*Body Format Default*/
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif, Arial, Times;
+	font-size: 18px;
+	background-color: #DBD9D7;
+	display: block;
+}
+
+h2, h6 {
+	text-align: center;
+}
+
+h2 {
+	margin-bottom: 15px;
+}
+
+hr {
+	margin: 15px 0px;
+}
+
+												/*Main navigation settings, styles, and formats*/
+nav {
+	float: left;
+	position: fixed;
+	background-color: #838A65;
+	width: 120px;
+	height: 100%;
+}
+
+nav li {
+	height: 70px;
+	text-align: center;
+	line-height: 80px;
+	padding-top: 10px;
+	font-family: 'Inconsolata', Lucida Console, Monaco ;
+	list-style: none;	
+}
+
+img {
+	-moz-box-shadow:0px 0px 7px #222;
+	-webkit-box-shadow:0px 0px 7px #222;
+	box-shadow:0px 0px 7px #222;
+	border: 2px solid rgba(0, 0, 0, 0.4);
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+}
+
+article img{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+#mainNav {
+	font-size: 15px;
+}
+
+#mainNav a:link,
+#mainNav a:visited {
+	color: white;
+	text-decoration: none;
+	display: block;
+}
+
+#mainNav a:hover {
+	background-color: gray;
+	height: 70px;
+	opacity: .3;
+}
+
+#mainNav a.active {
+	background-color: gray;
+	height: 70px;
+	opacity: .8;
+}
+
+#mainNav li:first-child {
+	background: url('../icons/0.png') no-repeat center 13px;
+	background-color: brown;
+}
+
+#mainNav li:nth-child(2) {
+	background: url('../icons/1.png') no-repeat center 13px;
+}
+
+#mainNav li:nth-child(3) {
+	background: url('../icons/2.png') no-repeat center 13px;
+}
+
+#mainNav li:nth-child(4) {
+	background: url('../icons/3.png') no-repeat center 13px;
+}
+
+#mainNav li:nth-child(5) {
+	background: url('../icons/4.png') no-repeat center 13px;
+}
+
+#mainNav li:nth-child(6) {
+	background: url('../icons/5.png') no-repeat center 13px;
+}
+
+#mainNav li:nth-child(7) {
+	background: url('../icons/6.png') no-repeat center 13px;
+}
+
+#mainNav li:nth-child(8) {
+	background: url('../icons/7.png') no-repeat center 13px;
+}
+
+
+											/*Social Media Icons Navigation*/
+
+#navRight ul {
+	float: right;
+	width: 300px;
+	padding-right: 50px;
+}
+
+#navRight ul li{
+	padding: 5px 0px 5px 0px;
+	margin: 10px;
+	text-decoration: none;
+	list-style-type: none;
+	display: inline;
+}
+
+#navRight ul li a{
+	display: inline;
+	width: 100%;
+	height: 100%;
+	padding: 1px 16px 1px 16px;
+}
+
+#navRight a:hover {
+	background-color: white;
+	opacity: .7;
+}
+
+#navRight a:visited {
+	color: white;
+	text-decoration: none;
+	display: block;
+}
+
+#navRight ul li:first-child {
+	background: url('../icons/rss.png') no-repeat center;
+}
+
+#navRight ul li:nth-child(2) {
+	background: url('../icons/email.png') no-repeat center;
+}
+
+#navRight ul li:nth-child(3) {
+	background: url('../icons/facebook.png') no-repeat center;
+}
+
+#navRight ul li:nth-child(4) {
+	background: url('../icons/plus.png') no-repeat center;
+}
+
+#navRight ul li:nth-child(5) {
+	background: url('../icons/twitter.png') no-repeat center;
+}
+
+
+
+													/*Header formatting and styles*/
+header {
+	height: 70px;
+	padding-top: 10px;
+	padding-left: 120px;
+	background-color: black;
+	display: block;
+}
+
+header p {
+	color: white;
+	float: left;
+	padding-left: 130px;
+	font-size: 12px;
+	line-height: 60px;
+	font-family: Monaco, Lucida Console;
+}
+
+												/*Footer formatting and styles*/
+footer {
+	height: 40px;
+	padding-top: 10px;
+	background-color: black;
+	display: block;
+	clear: both;
+	bottom: 0;
+	width: 100%;
+	position: fixed;
+}		
+
+footer p {
+	font-size: 12px;
+	color: white;
+	float: right;
+	padding-right: 50px;
+}										
+
+												/*Main Content styling and formatting*/
+section {
+	padding: 0px 0px 0px 120px;
+	margin: 0px 60px 0px 60px;
+}
+
+#headings h1 {
+	font-family: 'Yanone Kaffeesatz', Monaco, Lucida Console;
+	font-size: 115px;
+	width: 100%;
+	margin-right: 0px;
+	float: left;
+}
+
+#audio h2 {
+	text-align: left;
+}
+
+article {
+	background-color: white;
+	padding: 30px 50px;
+	box-shadow: 10px 10px 10px #888;
+	float: left;
+	width:63%;
+	margin-bottom: 90px;
+}
+
+object {
+	width: 100%;
+	height: 1135px;
+}
+
+.center {
+	display: block-inline;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+											/*Side Bar*/
+aside {
+	float: right;
+	width: 23%;
+	display: block;
+	background-color: white;
+	padding: 30px 20px 20px 20px;
+	box-shadow: 10px 10px 10px #888;
+}
+
+aside img {
+	display:block;
+	margin-right: 20px;
+	margin-bottom: 10px;
+	float: left;
+}
+
+aside p{
+	font-size: 14px;
+}
+
+											/*Active Links*/
+
+
+
+
+

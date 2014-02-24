@@ -1,0 +1,181 @@
+<!doctype html>
+
+<html lang="en">
+	
+	<head>
+		<meta charset="UTF-8">
+		<title>tony.pham</title>
+
+		<!-- Style sheets -->
+		<link rel="stylesheet" href="../css/main.css">
+		<link rel="stylesheet" href="../css/forms.css">
+
+		<!-- Fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:200' rel='stylesheet' type='text/css'>
+
+		<!-- jQuery UI CSS & Fonts -->
+		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />				
+
+		<!-- jQuery & jQuery UI -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+
+		<script>
+		function validateForm() {
+				//fields
+				var minChar = 4;
+				var minAlphaChar = 6;
+				var numAlpha =  /^[0-9a-zA-Z]+$/;
+				var min = document.getElementById('firstName');
+				var min2 = document.getElementById('lastName');
+				var fac = document.getElementById('facilitator');
+				var email = document.getElementById('email');
+				var regexp = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w+)+$/
+
+				if(min.value.length < minChar) {
+					alert("First name needs to be at least 4 characters long.");
+					min.focus();
+					min.select();
+					return false;
+				}
+
+				if(min2.value.length < minChar) {
+					alert("Last name needs to be at least 4 characters long.");
+					min2.focus();
+					min2.select();
+					return false;
+				}
+
+				if(fac.value.length < minChar) {
+					alert("Facilitator's name needs to be at least 4 characters long.");
+					fac.focus();
+					fac.select();
+					return false;
+				}
+
+				//validates email address	
+				if(!email.value.match(regexp)){
+					alert('Not a valid Email Address.');
+					return false;
+				}
+
+			return true;
+
+		}
+		</script>
+
+
+	</head>
+
+
+	<body>
+							<!-- Main Navigation -->
+		<nav>
+			<div id="mainNav">
+				<ul>
+					<li><a href="../index.html">tony.pham</a></li>
+					<li><a href="portfolio.html">portfolio</a></li>
+					<li><a href="resume.html">resume</a></li>
+					<li><a href="photo.html">photo.interest</a></li>
+					<li><a href="media.html">media</a></li>
+					<li><a href="quiz.html">quiz.app</a></li>
+					<li><a href="parallax.html">parallax</a></li>
+					<li><a href="contact.html">contact</a></li>
+				</ul>
+			</div>
+		</nav>
+					
+							<!-- Header -->
+		<header>
+			<p>var problem = { answer: "let's develop something together =]" }</p>
+
+				<div id="navRight">
+					<ul>
+						<li><a href="https://www.rss.com/" target="_blank"></a></li>
+						<li><a href="https://www.gmail.com" target="_blank"></a></li>
+						<li><a href="https://www.facebook.com" target="_blank"></a></li>
+						<li><a href="https://plus.google.com/" target="_blank"></a></li>
+						<li><a href="https://www.twitter.com" target="_blank"></a></li>
+					</ul>
+				</div>
+		</header>
+
+								<!-- Main Section -->
+		<section>
+						
+								<!-- Main article -->
+
+			<div id="headings">
+				<h1>contact.me</h1>
+			</div>
+
+			<article>
+				<form name="contact" action="http://bucs601.com/submit.php" method="post" onsubmit="return validateForm()">
+					<h1>Please fill out all fields:</h1>
+
+					<p>First Name : <input type="text" name="firstName" id="firstName" placeholder="Enter First Name" required></p>
+			
+					<p>Last Name : <input type="text" name="lastName" id="lastName" placeholder="Enter Last Name" required>
+					</p>
+			
+					<p>Facilitator : <input type="text" name="facilitator" id="facilitator" placeholder="Facilitator Full Name" required  ></p>
+					
+					<p>Email : <input type="email" name="email" id="email" placeholder="Enter your email" required  ></p>
+
+					<fieldset>
+						<legend>Years in Boston University:</legend>
+							<input type="radio" name="year" value="first" id="first">
+							<label for="first">Freshman</label><br>
+							<input type="radio" name="year" value="second" id="second">
+							<label for="second">Sophmore</label><br>
+							<input type="radio" name="year" value="third" id="third">
+							<label for="third">Junior</label><br>
+							<input type="radio" name="year" value="fourth" id="fourth">
+							<label for="fourth">Senior</label><br>
+							<input type="radio" name="year" value="fifth" id="fifth">
+							<label for="fifth">Graduate</label>
+					</fieldset>
+
+					<fieldset>
+						<legend>Computer Language Interest:</legend>
+							<input type="checkbox" name="ruby" value="ruby" id="ruby">
+							<label for="ruby">Ruby</label>
+							<input type="checkbox" name="python" value="python" id="python">
+							<label for="python">Python</label>
+							<input type="checkbox" name="javascript" value="javascript" id="javascript">
+							<label for="javascript">JavaScript</label>
+							<input type="checkbox" name="java" value="java" id="java">
+							<label for="java">Java</label>
+							<input type="checkbox" name="other" value="other" id="other">
+							<label for="other">Other</label>	
+					</fieldset>
+
+					<fieldset>
+						<legend>Comment or Message</legend>
+							<textarea name="comment" placeholder="Please leave any comments or messages."></textarea>
+					</fieldset>
+					
+					<input type="submit" name="submit" value="submit">
+				</form>
+			</article>
+
+			<!-- Side bar -->
+			<aside>
+				<img src="../images/me1.jpg" alt="Pic of me">
+				<p>Hello! My name is Tony. </p> <br> <p>I was so great in basketball that the NBA wouldn't allow me to join in their league. =[ </p> <br> <p>I like to code =] Big fan of JavaScript &lt;&#51;, node.JS, a bit of Ruby on Rails. </p>
+			</aside>
+
+		</section>
+
+
+		<footer>
+			<p>Copyright &#169; Tony Pham 2014</p>
+		</footer>
+	
+		<script src="../javascript/active.js" type:"text/javascript"></script>	
+		<script src="../javascript/main.js" type:"text/javascript"></script>
+	</body>
+
+</html>

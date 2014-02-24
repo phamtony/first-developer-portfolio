@@ -1,0 +1,35 @@
+#quizApp {
+	background-color: #999E99;
+	font-family: 'Andale Mono', Arial, sans-serif;
+	padding: 30px;
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+	box-shadow: 8px 8px 8px #888;
+}
+
+#quizApp #questions {
+	margin-bottom: 25px;
+	font-size: 25px;
+}
+
+#quizApp #radioButton {
+	margin-bottom: 15px;
+}
+
+#quizApp #radioButton input {
+	margin-bottom: 15px;
+}
+
+#quizApp #next input {
+	float: left;
+	display: block;
+}
+#quizApp #back input{
+	float: left;
+	margin-left: 15px;
+}
+
+#quizApp #results p {
+	margin-bottom: 10px;
+}
