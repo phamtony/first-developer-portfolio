@@ -1,2 +1,2 @@
-A display of front-end skills. Layout and design. User features and interface. HTML, CSS, JavaScript, and jQuery
+First full Front-end project. Layout + Design. User features and interface. HTML, CSS, JavaScript, and jQuery
 
