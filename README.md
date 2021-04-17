@@ -1,5 +1,5 @@
-### Full (first) portfolio/bio website created.
-#### Layout + Design by Tony
+# Full (first) portfolio/bio website created.
+## Layout + Design by Tony
 
 - HTML
 - CSS
